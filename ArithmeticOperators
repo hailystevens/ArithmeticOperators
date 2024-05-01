@@ -1,5 +1,6 @@
 Arithmetic operators in Java are used to perform mathematical operations on numerical
 operands. Java supports several arithmetic operators:
+
 + = addition of two numbers
 - = subtraction of two numbers
 * = multiplication of two numbers

@@ -2,6 +2,7 @@ Unary operators in Java are operators that operate on a single operand.
 They are used to perform various operations such as:
 incrementing, decrementing, negating, or complementing a value.
 Java supports several unary operators such as:
+
 -Unary Plus (+) and Unary Minus (-)
 -‘NOT’ Operator(!)
 -Increment (++) and Decrement (--) Operators
