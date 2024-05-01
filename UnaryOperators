@@ -1,0 +1,81 @@
+Unary operators in Java are operators that operate on a single operand.
+They are used to perform various operations such as:
+incrementing, decrementing, negating, or complementing a value.
+Java supports several unary operators such as:
+-Unary Plus (+) and Unary Minus (-)
+-‘NOT’ Operator(!)
+-Increment (++) and Decrement (--) Operators
+-Bitwise Complement(~)
+-
+Unary Plus (+) and Unary Minus (-) Operators:
+The unary plus operator (+) indicates positive value.
+The unary minus operator (-) negates the value of its operand
+int x = 10;
+int y = -x;  // y = -10
+int z = +x;  // z = 10
+-
+‘NOT’ Operator(!): The logical complement ('NOT') operator (!) is used to invert the value of a
+boolean expression. If the operand is true, it returns false,
+and if the operand is false, it returns true.
+boolean isTrue = true;
+boolean isFalse = !isTrue;  // isFalse = false
+-
+Increment (++) and Decrement (--) Operators:
+The increment operator (++) increases the value of its operand by 1.
+The decrement operator (--) decreases the value of its operand by 1.
+These operators can be used as prefix (++x, --x) or postfix (x++, x--),
+with the difference being when the increment or decrement operation is applied.
+int x = 5;
+int y = ++x; // y = 6, x = 6
+int z = x--; // z = 6, x = 5
+-
+Bitwise Complement (~) Operator:
+The bitwise complement operator (~) is used to invert all bits of its operand.
+It's only applicable to integral types (int, long, short, char, byte).
+int x = 5;  // binary representation: 00000000 00000000 00000000 00000101
+int y = ~x; // binary representation: 11111111 11111111 11111111 11111010
+-
+Example program in Java that implements all basic unary operators for user input:
+
+import java.util.Scanner;
+
+public class UnaryOperators {
+	public static void main(String[] args)
+	{
+		Scanner sc = new Scanner(System.in);
+
+		// System.out.print("Enter a number: ");
+		// int num = sc.nextInt();
+		int num = 10;
+
+		int result = +num;
+		System.out.println(
+			"The value of result after unary plus is: "
+			+ result);
+
+		result = -num;
+		System.out.println(
+			"The value of result after unary minus is: "
+			+ result);
+
+		result = ++num;
+		System.out.println(
+			"The value of result after pre-increment is: "
+			+ result);
+
+		result = num++;
+		System.out.println(
+			"The value of result after post-increment is: "
+			+ result);
+
+		result = --num;
+		System.out.println(
+			"The value of result after pre-decrement is: "
+			+ result);
+
+		result = num--;
+		System.out.println(
+			"The value of result after post-decrement is: "
+			+ result);
+	}
+}
