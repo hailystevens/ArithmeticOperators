@@ -1,0 +1,28 @@
+logical operators are used to perform logical operations on boolean values or expressions.
+
+There are three main logical operators:
+
+Logical AND (&&): The logical AND operator returns true if both operands are true, otherwise,
+it returns false.
+Logical OR (||): The logical OR operator returns true if at least one of the operands is true,
+otherwise, it returns false.
+Logical NOT (!): The logical NOT operator negates the boolean value of its operand.
+If the operand is true, it returns false; if the operand is false, it returns true.
+
+Here's a quick summary:
+
+Logical AND (&&):
+true && true returns true
+true && false returns false
+false && true returns false
+false && false returns false
+
+Logical OR (||):
+true || true returns true
+true || false returns true
+false || true returns true
+false || false returns false
+
+Logical NOT (!):
+!true returns false
+!false returns true
