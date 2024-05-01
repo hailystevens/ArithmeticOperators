@@ -1,0 +1,30 @@
+In Java, shift operators are used to shift the bits of an integer value left or right.
+There are three types of shift operators:
+
+Left Shift (<<): This operator shifts the bits of a number to the left by a specified number
+of positions. It fills the vacant positions with zeros.
+Right Shift (>>): This operator shifts the bits of a number to the right by a specified number
+of positions. If the number is positive, it fills the vacant positions with the sign bit
+(the leftmost bit). If the number is negative, it fills the vacant positions with ones.
+Unsigned Right Shift (>>>): This operator shifts the bits of a number to the right by a
+specified number of positions. It always fills the vacant positions with zeros, regardless
+of the sign of the number.
+
+Here's a quick summary:
+
+Left Shift (<<): x << n shifts the bits of x n positions to the left.
+Right Shift (>>): x >> n shifts the bits of x n positions to the right.
+Unsigned Right Shift (>>>): x >>> n shifts the bits of x n positions to the right,
+filling the vacant positions with zeros.
+
+Example:
+int x = 5;   // 0000 0101 in binary
+
+// Left shift by 2 positions
+int result1 = x << 2;  // result1 = 20 (0001 0100 in binary)
+
+// Right shift by 1 position
+int result2 = x >> 1;  // result2 = 2 (0000 0010 in binary)
+
+// Unsigned right shift by 1 position
+int result3 = x >>> 1; // result3 = 2 (0000 0010 in binary)
