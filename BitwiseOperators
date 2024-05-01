@@ -1,0 +1,77 @@
+Bitwise operators in Java are used to perform bitwise operations on integer operands
+at the binary level. These operators manipulate individual bits of integer operands.
+These operators work on integer types (int, long, short, byte)
+and perform bitwise operations on them.
+These operators are fundamental in Java programming, especially when dealing with low-level data
+manipulation or when you need to perform bitwise operations for specific algorithms or tasks.
+
+Bitwise AND (&)
+Bitwise OR (|)
+Bitwise XOR (^)
+Bitwise Complement (~)
+Left Shift (<<)
+Right Shift (>>)
+-
+Bitwise AND (&): This operator compares each bit of the first operand with the corresponding
+bit of the second operand. If both bits are 1, the resulting bit is set to 1;
+otherwise, it's set to 0.
+Example:
+  5 & 3 = 1
+In binary:
+  0101   (5 in binary)
+& 0011   (3 in binary)
+------
+  0001   (result)
+-
+Bitwise OR (|): This operator also compares each bit of the first operand with the corresponding
+bit of the second operand. If at least one of the bits is 1, the resulting bit is set to 1.
+Example:
+  5 | 3 = 7
+In binary:
+  0101   (5 in binary)
+| 0011   (3 in binary)
+------
+  0111   (result)
+-
+Bitwise XOR (^): This operator compares each bit of the first operand with the corresponding
+bit of the second operand. If the bits are different, the resulting bit is set to 1;
+otherwise, it's set to 0.
+Example:
+  5 ^ 3 = 6
+In binary:
+  0101   (5 in binary)
+^ 0011   (3 in binary)
+------
+  0110   (result)
+-
+Bitwise Complement (~): This operator flips each bit of the operand. If the bit is 1,
+it becomes 0, and if it's 0, it becomes 1.
+Example:
+  ~5 = -6
+In binary:
+  0101   (5 in binary)
+~
+------
+ 1010    (result, which is interpreted as -6 in two's complement notation)
+-
+Left Shift (<<): This operator shifts the bits of a number to the left by a specified number
+of positions.
+Example:
+  5 << 2 = 20
+In binary:
+000101   (5 in binary)
+<< 2
+-------
+101000   (result, which is 20 in decimal)
+-
+Right Shift (>>): This operator shifts the bits of a number to the right by a specified
+number of positions.
+Example:
+  20 >> 2 = 5
+In binary:
+10100   (20 in binary)
+>> 2
+------
+000101   (result, which is 5 in decimal)
+
+
